@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array</title>
+    </head>
+
+<body style="background-color: antiquewhite;">
+   <center>
+    <p style="color: black;"><h3><i><b>Click the button to evaluate/exucute Javascript code/expressions</b></i></h3></p>
+    <button onclick="myFunction()" style="background-color: rgb(8, 139, 8);color: white;">Click me!!</button>
+    <p id="result"></p>
+
+    <script>
+        function myFunction() {
+            var x = 3
+            var y = 10
+            var a = eval("x") + "<br>";;
+            var b = eval("2 * x") + "<br>";
+            var c = eval("y-x") + "<br>";
+
+            var res = a + b + c; //concatenates the string
+            document.getElementById("result").innerHTML = res;
+        }
+    </script>
+   </center>
+</body>
+</html>
